@@ -8,4 +8,5 @@
 :root{
   --main-primary-color: purple;
   --main-white-color: #fff;
+  --main-styled-white-color: rgb(221, 221, 221);
 }

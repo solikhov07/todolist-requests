@@ -4,7 +4,6 @@ import c from './Home.module.css'
 const Home = () => {
     return (
         <div>
-        <Header/>
         </div>
     )
 }

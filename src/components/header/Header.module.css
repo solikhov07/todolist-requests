@@ -1,5 +1,151 @@
 header{
     width: 100%;
     height: 50px;
+    background-color: var(--main-styled-white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header_logo__wrapper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header__logo{
+    width: 50px;
+    height: 90%;
+}
+
+.header__logo > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.header_text_logo{
+    font-size: 30px;
+    padding-left: 5px;
+    color: var(--main-primary-color);
+}
+
+.header_nav_btn{
+    font-size: 30px;
     background-color: var(--main-primary-color);
+    color: var(--main-white-color);
+    width: 50px;
+    height: 80%;
+    border-radius: 10px;
+    display: none;
+    place-items: center;
+    cursor: pointer;
+}
+
+.header__nav{
+    width: 40%;
+    height: 100%;
+}
+
+.header_nav_right{
+    right: -100%;
+}
+
+.header_nav_ul__wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header_nav_sidebar_close{
+    display: none;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 25px;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.header_nav_li{
+    height: 90%;
+}
+
+.header_active_link{
+    background-color: var(--main-primary-color);
+    color: var(--main-white-color) !important;
+    border-radius: 10px;
+}
+
+.header_nav_li > a{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--main-primary-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 90%;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+.header_nav_li > a > span{
+    padding: 0 5px;
+}
+
+.animated_settings_icon{
+    animation: rotate 1s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media only screen and (max-width: 990px){
+    .header__nav{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .header_nav_btn{
+        display: grid;
+    }
+    .header__nav{
+        position: fixed;
+        transition: 1s;
+        top: 0;
+        right: 0;
+        background-color: var(--main-white-color);
+    }
+    .header_nav_ul__wrapper{
+        display: block;
+    }
+    .header_nav_sidebar_close{
+        display: block;
+    }
+    .header_nav_li{
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .header__nav{
+        width: 100%;
+    }
 }
