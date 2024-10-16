@@ -4,3 +4,8 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+:root{
+  --main-primary-color: purple;
+  --main-white-color: #fff;
+}
