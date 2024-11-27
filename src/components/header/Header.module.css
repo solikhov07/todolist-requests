@@ -98,8 +98,12 @@ header{
 }
 
 .animated_settings_icon{
-    animation: rotate 1s linear infinite;
-    transform-origin: center;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: grid;
+    place-items: center;
 }
 
 @keyframes rotate {

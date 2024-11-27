@@ -28,7 +28,7 @@ const Header = () => {
              <ul className={c.header_nav_ul__wrapper}>
                  {
                      header_nav_ul_options.map(e => <li className={c.header_nav_li} key={uuidv4()}><NavLink exact activeClassName={c.header_active_link} to={e.nav_link}>
-                         <span>{e.title}</span> <span className={e.title.includes('Settings') ? `${c.animated_settings_icon}` : ""}>{e.icon}</span>
+                         <span>{e.title}</span> <span className={e.title.includes('Settings') ? `${c.animated_settings_icon}` : null}>{e.icon}</span>
                      </NavLink>
                      </li>
                      )
