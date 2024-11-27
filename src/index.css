@@ -7,6 +7,7 @@
 
 :root{
   --main-primary-color: purple;
+  --main-styled-primary-color: rgb(233, 0, 233);
   --main-white-color: #fff;
   --main-styled-white-color: rgb(221, 221, 221);
 }
