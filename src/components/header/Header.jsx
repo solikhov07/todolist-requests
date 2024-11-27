@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import c from './Header.module.css'
 import logo from '../../assets/images/todolist-logo.webp'
-import { data } from '../../jwt/data-json.js'
+import data from '../../jwt/data-json.js'
 import { v4 as uuidv4 } from 'uuid'
 import { NavLink } from 'react-router-dom'
 import { MdClose, MdMenu } from "react-icons/md";

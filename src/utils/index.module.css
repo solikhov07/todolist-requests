@@ -1,0 +1,12 @@
+.container{
+    max-width: 1400px;
+    height: 600px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container:has(.main__btn__wrapper){
+    display: flex;
+    align-items: center;
+}
