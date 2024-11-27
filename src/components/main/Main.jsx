@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import c from './Main.module.css'
 import datajsons from '../../jwt/data-json.js'
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+import { v4 as uuidv4 } from 'uuid'
 const Main = () => {
     const {carousel_images} = datajsons.main
     const carouselEl = useRef()
@@ -27,7 +28,7 @@ const Main = () => {
             </div>
             <div ref={carouselEl} className={c.carousel_container}>
                 {carousel_images.map(e => 
-                <div className={c.carousel_box_image}><img src={e.url} alt="" /><h3>{e.heading}</h3></div>
+                <div key={uuidv4()} className={c.carousel_box_image}><img src={e.url} alt="" /><h3>{e.heading}</h3></div>
                 )}
             </div>
         </Container>
