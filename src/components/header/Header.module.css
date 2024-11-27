@@ -6,6 +6,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+    margin-bottom: 10px;
 }
 
 .header_logo__wrapper{
