@@ -31,6 +31,10 @@ const Main = () => {
                 <div key={uuidv4()} className={c.carousel_box_image}><img src={e.url} alt="" /><h3>{e.heading}</h3></div>
                 )}
             </div>
+            <div className={c.main_about_us_wrapper}>
+                <h2 className={c.about_us__heading}>About us</h2>
+                <p className={c.text__body}>Focused on simplifying the user experience, the company strives to create intuitive, accessible designs that make navigation effortless for all users. Whether for personal or business needs, the goal is to provide a seamless online experience that meets customer expectations.</p>
+            </div>
         </Container>
     )
 }
