@@ -42,8 +42,6 @@ justify-content: flex-end;
     object-fit: cover;
     position: absolute;
     top: 0;
-    -webkit-mask-image: linear-gradient(180deg,rgb(72, 72, 72) 20%,#00000000);
-mask-image: linear-gradient(180deg,#000 30%,#00000000);
 }
 
 .carousel_box_image > h3{
