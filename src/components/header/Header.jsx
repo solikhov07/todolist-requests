@@ -5,11 +5,13 @@ import data from '../../jwt/data-json.js'
 import { v4 as uuidv4 } from 'uuid'
 import { NavLink } from 'react-router-dom'
 import { MdClose, MdMenu } from "react-icons/md";
+import Container from '../../utils'
 const Header = () => {
     const {header_nav_ul_options} = data
     const [navSidebarState, setNavSidebarState] = useState(false)
     return (
         <header>
+            <Container>
          <div className={c.header_logo__wrapper}>
          <div className={c.header__logo}>
              <img src={logo} alt="" />
@@ -35,6 +37,7 @@ const Header = () => {
                  }
              </ul>
          </nav>
+         </Container>
         </header>
     )
 }
