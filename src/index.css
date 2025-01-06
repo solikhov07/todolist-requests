@@ -1,13 +1,16 @@
+@font-face {
+  font-family: 'robot';
+  src: url('./assets/fonts/Poppins-SemiBold.ttf');
+}
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'robot';
 }
-
 :root{
   --main-primary-color: purple;
-  --main-styled-primary-color: rgb(233, 0, 233);
+  --main-styled-primary-color: rgb(223, 1, 223);
   --main-white-color: #fff;
   --main-styled-white-color: rgb(221, 221, 221);
 }

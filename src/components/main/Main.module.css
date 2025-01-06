@@ -46,11 +46,45 @@ justify-content: flex-end;
 
 .carousel_box_image > h3{
     height: 40%;
+    width: 100%;
     display: grid;
     place-items: center;
     font-size: 35px;
-    font-weight: 800;
-    color: var(--main-styled-primary-color);
+    font-weight: 900;
+    background: linear-gradient(rgb(124, 0, 124), rgb(255, 49, 227));
+    background-clip: text;
+    color: transparent;
     position: relative;
     z-index: 2;
+    text-align: center;
+    position: relative;
+}
+
+.carousel_box_image > h3::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(255, 255, 255, 0.288);
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.main_about_us_wrapper{
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_us__heading{
+    font-weight: 900;
+    color: var(--main-primary-color);
+    font-size: 33px;
+}
+
+.text__body{
+    width: 50%;
+    font-size: 20px;
 }
